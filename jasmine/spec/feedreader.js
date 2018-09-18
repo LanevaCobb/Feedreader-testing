@@ -106,7 +106,8 @@ $(function() {
          });
 
          it('checks that loadFeed is called and completes its job', function() {
-           expect(document.querySelector('.feed')).not.toBe(' ');
+           var feed = document.querySelector('.feed');
+           expect(feed.children.length).toBeGreaterThan(0);
          });
 
 
