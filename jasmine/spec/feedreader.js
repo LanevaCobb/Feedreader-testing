@@ -80,10 +80,14 @@ $(function() {
           */
 
           it('hides and shows when menu icon is clicked', function() {
-            document.querySelector('.menu-icon-link').click();
+            var menuClick = document.querySelector('.menu-icon-link')
+            menuClick.click();
             expect(document.querySelector('body').classList.contains('menu-hidden')).toBe(false);
 
+            menuClick.click();
           });
+
+
 
     });
     /* Write a new test suite named "Initial Entries" */
