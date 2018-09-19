@@ -12,4 +12,10 @@ Several tests are running in the background.
  - Last test- makes sure the content changes when a new feed had loaded.
 
  These test will run at each refresh or page load.
+
+ # How to install the reader locally
+
+ 1. Clone this repository by clicking the green "Clone or download" button via GitHub Desktop or Download ZIP
+ 2. Open the index.html file in your browser
+
 - Scroll to the bottom of the page to see the Jasmine test results. All the tests must pass with no failures. Should there be any failures, Jasmine will indicate where the problem lies. You would review the messages and errors; pinpoint which file/files are causing the issue. You would then make code changes to that file appropriately.
