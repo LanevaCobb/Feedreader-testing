@@ -123,7 +123,7 @@ $(function() {
          var feed = document.querySelector('.feed');
 
          beforeEach(function(done) {
-           loadFeed(0);
+           loadFeed(0, done);
            Array.from(feed.children).forEach(function(entry) {
              initialFeed.push(entry);
            });
@@ -131,14 +131,13 @@ $(function() {
            loadFeed(1, done);
          });
 
+
+
          it('checks that content changes when new feed is loaded', function() {
-           Array.from(feed.children).forEach(function(entry,index) {
-             expect(entry === initialFeed[index]).toBe(false);
-           });
+          Array.from(feed.children).forEach(function(entry,index) {
+            expect(entry === initialFeed[index]).toBe(false);
+          });
         });
-
-   });
-
-
+  });
 
 }());
