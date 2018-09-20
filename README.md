@@ -17,7 +17,7 @@ Several tests are running in the background.
 
  1. Clone this repository by clicking the green "Clone or download" button via GitHub Desktop or Download ZIP
  2. Open the index.html file in your browser
- 3. Jasmine then runs all the tests indicated in the FeedReader.js file.
+ 3. Jasmine then runs all the tests indicated in the feedreader.js file.
 
 - Scroll to the bottom of the page to see the Jasmine test results. All tests must pass with no failures. Should there be any failures, Jasmine will indicate where the problem lies. You would review the messages and errors; pinpoint which file/files are causing the issue. You would then make code changes to that file appropriately. Console.log is your friend. Use it to see what the application is doing in the background.
 
