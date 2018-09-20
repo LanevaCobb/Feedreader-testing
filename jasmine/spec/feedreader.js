@@ -68,6 +68,7 @@ $(function() {
             expect(document.querySelector('body').classList.contains('menu-hidden')).toBe(false);
 
             menuClick.click();
+            expect(document.querySelector('body').classList.contains('menu-hidden')).toBe(true);
           });
 
 
@@ -88,7 +89,7 @@ $(function() {
 
          it('checks that loadFeed is called and completes its job', function() {
            var feed = document.querySelector('.feed');
-           expect(feed.children.length).toBeGreaterThan(0);
+           expect($('.feed .entry').length).toBeGreaterThan(0);
          });
 
 
@@ -103,15 +104,13 @@ $(function() {
          var feed = document.querySelector('.feed');
 
          beforeEach(function(done) {
-           loadFeed(0, done);
-           Array.from(feed.children).forEach(function(entry) {
-             initialFeed.push(entry);
-           });
-
-           loadFeed(1, done);
+           loadFeed(0, function(){
+             Array.from(feed.children).forEach(function(entry) {
+               initialFeed.push(entry);
+             });
+             loadFeed(1, done);
+          });
          });
-
-
 
          it('checks that content changes when new feed is loaded', function() {
           Array.from(feed.children).forEach(function(entry,index) {
