@@ -21,4 +21,4 @@ Several tests are running in the background.
 
 - Scroll to the bottom of the page to see the Jasmine test results. All tests must pass with no failures. Should there be any failures, Jasmine will indicate where the problem lies. You would review the messages and errors; pinpoint which file/files are causing the issue. You would then make code changes to that file appropriately. Console.log is your friend. Use it to see what the application is doing in the background.
 
-NOTE: Should a test fail, the issue is most likely in the feedreader.js file. You can find the file in the spec\js folder.  
+NOTE: Should a test fail, the issue is most likely in the feedreader.js file. You can find the file in the jasmine\spec\js folder.  
