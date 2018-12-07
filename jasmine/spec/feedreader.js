@@ -96,7 +96,7 @@ $(function() {
     });
 
   describe('New Feed Selection', function() {
-        /*Test that ensures when a new feed is loaded that the content actually changes.
+        /*Test that will ensure when a new feed is loaded that the content actually changes.
          *
          */
 
